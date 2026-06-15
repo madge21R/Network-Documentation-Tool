@@ -5,12 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="styles.css">
     <title>Network Documentation Tool</title>
+
+    <style>
+   
+  </style>
 </head>
 <body>
 
-    <h1>Network Documentation Tool</h1>
+    <div class="hamburger" onclick="openMenu()"> 
+<div></div>
+  <div></div>
+  <div></div>
+</div>
 
-    <form action="save_device.php" method="POST">
+<div class="search-container"><input type="text" name="search">
+    <button type="submit">Search</button></div> <br><br><br>
+
+<!-- Hamburger Menu -->
+<div id="menu" class="menu">
+  <span class="closebtn" onclick="closeMenu()">&times;</span>
+  
+  <!-- Main Navigation -->
+  <a href="#">Dashboard</a>
+  <a href="#">Network Maps / Topology</a>
+  <a href="#">Devices / Nodes</a>
+  <a href="#">IP Management</a>
+  <a href="#">Configuration Files</a>
+  
+  <!-- Documentation Tools -->
+  <a href="#">Projects / Workspaces</a>
+  <a href="#">Change Logs</a>
+  <a href="#">Reports / Exports</a>
+  <a href="#">Templates</a>
+  
+  <!-- Utilities -->
+  <a href="#">Scanner / Discovery</a>
+  <a href="#">Backup & Restore</a>
+  <a href="#">Performance Metrics</a>
+  
+  <!-- Collaboration & Account -->
+  <a href="#">Team Management</a>
+  <a href="#">Notifications</a>
+  <a href="#">Profile / Settings</a>
+  
+  <!-- Support -->
+  <a href="#">Help / Tutorials</a>
+  <a href="#">Feedback / Contact Support</a>
+  <a href="#">About / Version Info</a>
+</div>
+
+<script>
+  function openMenu() {
+    document.getElementById("menu").style.width = "250px";
+  }
+  function closeMenu() {
+    document.getElementById("menu").style.width = "0";
+  }
+</script>
+
+
+
+ <h1>Add Device</h1>
+
+    <form action="save_device.php" method="POST" >
 
         <label>Device Name:</label><br>
         <input type="text" name="device_name" required><br><br>
@@ -41,7 +98,6 @@
         <textarea name="notes"></textarea><br><br>
 
         <button type="submit">Save Device</button>
-
     </form>
 
 </body>

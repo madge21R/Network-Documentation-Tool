@@ -5,14 +5,16 @@
 </head>
 <body>
 
-<h2>Network Documentation System Login</h2>
 
-<form action="authenticate.php" method="POST">
+<h2>Login with your Credentials</h2>
 
-    <label>Username:</label><br>
+<form action="authenticate.php" method="POST" align="center">
+
+
+    <label align="center">Username:</label><br>
     <input type="text" name="username" required><br><br>
 
-    <label>Password:</label><br>
+    <label align="center">Password:</label><br>
     <input type="password" name="password" required><br><br>
 
     <button type="submit">Login</button>
