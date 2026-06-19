@@ -2,7 +2,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
     }
-    /* Hamburger icon */
+    /* Hamburger icon 
     .hamburger {
       cursor: pointer;
       padding: 15px;
@@ -14,7 +14,35 @@
       background-color: #333;
       margin: 5px 0;
       transition: 0.4s;
+    }*/
+    .top-bar {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #333;
+      height: 90px;
     }
+    
+    .top-bar input[type="text"] {
+      flex: 1;
+      padding: 8px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 4px;
+      align-self: right;
+      width: 0%;
+    }
+    .top-bar button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 14px;
+      background-color: #555;
+      color: #fff;
+      cursor: pointer;
+      width: 5%;
+    
+    }
+
     /* Menu styling */
     .menu {
       height: 100%;
